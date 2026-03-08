@@ -20,17 +20,35 @@ margin:auto;
 padding:20px;
 }
 
+h1{
+margin-bottom:25px;
+}
+
 .card{
 background:#14142b;
 border-radius:20px;
-padding:25px;
+padding:20px;
 margin-bottom:15px;
+border:1px solid #272750;
+transition:0.2s;
 }
 
-a{
-color:#9aa0ff;
+.card:hover{
+transform:scale(1.02);
+box-shadow:0 0 20px rgba(120,80,255,0.3);
+}
+
+.card a{
+color:#cfcfff;
 text-decoration:none;
 font-size:18px;
+display:block;
+}
+
+.description{
+color:#9aa0c6;
+font-size:14px;
+margin-top:5px;
 }
 
 .bottom{
@@ -45,14 +63,16 @@ justify-content:space-around;
 padding:10px 0;
 }
 
+.bottom a{
+color:#a7a7ff;
+text-decoration:none;
+font-size:14px;
+text-align:center;
+}
+
 .bottom span{
 display:block;
 font-size:22px;
-}
-
-.bottom a{
-color:#a7a7ff;
-text-align:center;
 }
 
 </style>
@@ -62,16 +82,55 @@ text-align:center;
 
 <div class="container">
 
+<h1>🔗 Ресурсы сообщества</h1>
+
 <div class="card">
-<a href="#">Telegram</a>
+<a href="https://t.me/ggc_info_channel" target="_blank">
+📢 Инфо-канал
+</a>
+<div class="description">Официальный канал новостей</div>
 </div>
 
 <div class="card">
-<a href="#">Discord</a>
+<a href="https://t.me/+1NoCmcYJgUJkYjU9" target="_blank">
+💬 Главная беседа
+</a>
+<div class="description">Основной чат сообщества</div>
 </div>
 
 <div class="card">
-<a href="#">Instagram</a>
+<a href="https://t.me/+TigKrvMh6Q9kNmRi" target="_blank">
+📣 Беседа для объявлений
+</a>
+<div class="description">Публикация важных сообщений</div>
+</div>
+
+<div class="card">
+<a href="https://t.me/+AUvblh25s9NjYjcy" target="_blank">
+🔄 Чат для обмена
+</a>
+<div class="description">Обмен и взаимодействие участников</div>
+</div>
+
+<div class="card">
+<a href="https://t.me/GGC_Sapportbot" target="_blank">
+🤖 Бот тех. поддержки
+</a>
+<div class="description">Помощь и связь с администрацией</div>
+</div>
+
+<div class="card">
+<a href="https://t.me/ggc_info_channel/177" target="_blank">
+📌 PR-post
+</a>
+<div class="description">Рекламный пост проекта</div>
+</div>
+
+<div class="card">
+<a href="https://teletype.in/@adam_nifidov/mainBl_GGC" target="_blank">
+🚫 Черный список
+</a>
+<div class="description">Список нарушителей сообщества</div>
 </div>
 
 </div>
