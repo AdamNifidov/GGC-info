@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sweety Community</title>
+<title>Gay Guys Community</title>
 
 <style>
 
@@ -13,6 +13,7 @@ margin:0;
 font-family:system-ui;
 background:linear-gradient(180deg,#050510,#0b0b1c);
 color:white;
+text-align:center;
 }
 
 .container{
@@ -24,35 +25,39 @@ padding:20px;
 .card{
 background:linear-gradient(145deg,#14142b,#1b1b38);
 border-radius:24px;
-padding:30px;
+padding:35px;
 box-shadow:0 0 30px rgba(120,80,255,0.25);
 margin-bottom:30px;
 }
 
-.badge{
-display:inline-block;
-background:rgba(140,100,255,0.15);
-border:1px solid rgba(160,120,255,0.3);
-padding:8px 16px;
-border-radius:999px;
-color:#cdb8ff;
+.notice{
 font-size:14px;
+color:#bdbdff;
+margin-bottom:15px;
+}
+
+.notice a{
+color:#caa8ff;
+text-decoration:none;
+border-bottom:1px dashed #caa8ff;
 }
 
 h1{
-font-size:42px;
+font-size:40px;
 margin:15px 0;
 }
 
 .subtitle{
-color:#9aa0c6;
+color:#a5a5d6;
 font-size:18px;
+line-height:1.6;
 }
 
 .buttons{
 display:flex;
 flex-wrap:wrap;
 gap:15px;
+justify-content:center;
 margin-top:25px;
 }
 
@@ -63,6 +68,27 @@ background:#101028;
 border:1px solid #272750;
 color:#cfcfff;
 text-decoration:none;
+transition:0.2s;
+}
+
+.button:hover{
+background:#181842;
+}
+
+.news{
+background:#14142b;
+border-radius:20px;
+padding:30px;
+border:1px solid #272750;
+}
+
+.news-title{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.news-empty{
+color:#8c8cb5;
 }
 
 .bottom{
@@ -98,12 +124,19 @@ font-size:22px;
 
 <div class="card">
 
-<div class="badge">📋 ОФИЦИАЛЬНЫЙ ДОКУМЕНТ</div>
+<div class="notice">
+Используя ресурсы GGC вы соглашаетесь с нашей 
+<a href="privacy.html">политикой</a>
+</div>
 
 <h1>Добро пожаловать</h1>
 
 <div class="subtitle">
-Sweety Community — официальный сайт информации
+Это официальный сайт <b>«Gay Guys Community»</b> — первой сети бесед для геев подростков в СНГ, вышедшей на уровень большого комьюнити.  
+<br><br>
+Наша сеть создана для вашего комфорта и безопасности.  
+<br><br>
+С любовью, администрация <b>GGC</b>.
 </div>
 
 <div class="buttons">
@@ -113,6 +146,16 @@ Sweety Community — официальный сайт информации
 <a class="button" href="hierarchy.html">👑 Иерархия</a>
 <a class="button" href="privacy.html">🔒 Политика</a>
 
+</div>
+
+</div>
+
+<div class="news">
+
+<div class="news-title">📰 Новостная лента</div>
+
+<div class="news-empty">
+Актуальные новости пока не загружены.
 </div>
 
 </div>
