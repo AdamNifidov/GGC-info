@@ -3,76 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ресурсы</title>
+<title>Ресурсы — Gay Guys Community</title>
 
 <style>
 
 body{
 margin:0;
-font-family:system-ui;
-background:linear-gradient(180deg,#050510,#0b0b1c);
+font-family:sans-serif;
+background:linear-gradient(180deg,#2d3142,#3a4a6a);
 color:white;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-h1{
-margin-bottom:25px;
-}
-
-.card{
-background:#14142b;
-border-radius:20px;
-padding:20px;
-margin-bottom:15px;
-border:1px solid #272750;
-transition:0.2s;
-}
-
-.card:hover{
-transform:scale(1.02);
-box-shadow:0 0 20px rgba(120,80,255,0.3);
-}
-
-.card a{
-color:#cfcfff;
-text-decoration:none;
-font-size:18px;
-display:block;
-}
-
-.description{
-color:#9aa0c6;
-font-size:14px;
-margin-top:5px;
-}
-
-.bottom{
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:#080816;
-border-top:1px solid #222244;
 display:flex;
-justify-content:space-around;
-padding:10px 0;
+flex-direction:column;
+align-items:center;
+padding-bottom:120px;
 }
 
-.bottom a{
-color:#a7a7ff;
-text-decoration:none;
-font-size:14px;
+.glass{
+backdrop-filter:blur(25px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:25px;
+}
+
+.title{
+margin-top:30px;
+font-size:28px;
+}
+
+.links{
+width:90%;
+margin-top:20px;
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.link{
+padding:15px;
 text-align:center;
+font-size:16px;
+text-decoration:none;
+color:white;
+border-radius:18px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(20px);
 }
 
-.bottom span{
-display:block;
-font-size:22px;
+.nav{
+position:fixed;
+bottom:20px;
+display:flex;
+gap:10px;
+padding:10px;
+}
+
+.nav button{
+width:60px;
+height:60px;
+border-radius:18px;
+border:none;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
+color:white;
+font-size:20px;
 }
 
 </style>
@@ -80,82 +74,35 @@ font-size:22px;
 
 <body>
 
-<div class="container">
-
-<h1>🔗 Ресурсы сообщества</h1>
-
-<div class="card">
-<a href="https://t.me/ggc_info_channel" target="_blank">
-📢 Инфо-канал
-</a>
-<div class="description">Официальный канал новостей</div>
+<div class="title">
+Ресурсы сети
 </div>
 
-<div class="card">
-<a href="https://t.me/+1NoCmcYJgUJkYjU9" target="_blank">
-💬 Главная беседа
-</a>
-<div class="description">Основной чат сообщества</div>
-</div>
+<div class="links glass">
 
-<div class="card">
-<a href="https://t.me/+TigKrvMh6Q9kNmRi" target="_blank">
-📣 Беседа для объявлений
-</a>
-<div class="description">Публикация важных сообщений</div>
-</div>
+<a class="link" href="https://t.me/ggc_info_channel">Инфо-канал</a>
 
-<div class="card">
-<a href="https://t.me/+AUvblh25s9NjYjcy" target="_blank">
-🔄 Чат для обмена
-</a>
-<div class="description">Обмен и взаимодействие участников</div>
-</div>
+<a class="link" href="https://t.me/+1NoCmcYJgUJkYjU9">Главная беседа</a>
 
-<div class="card">
-<a href="https://t.me/GGC_Sapportbot" target="_blank">
-🤖 Бот тех. поддержки
-</a>
-<div class="description">Помощь и связь с администрацией</div>
-</div>
+<a class="link" href="https://t.me/+TigKrvMh6Q9kNmRi">Беседа для объявлений</a>
 
-<div class="card">
-<a href="https://t.me/ggc_info_channel/177" target="_blank">
-📌 PR-post
-</a>
-<div class="description">Рекламный пост проекта</div>
-</div>
+<a class="link" href="https://t.me/+AUvblh25s9NjYjcy">Чат для обмена</a>
 
-<div class="card">
-<a href="https://teletype.in/@adam_nifidov/mainBl_GGC" target="_blank">
-🚫 Черный список
-</a>
-<div class="description">Список нарушителей сообщества</div>
-</div>
+<a class="link" href="https://t.me/GGC_Sapportbot">Бот тех. поддержки</a>
+
+<a class="link" href="https://t.me/ggc_info_channel/177">PR-post</a>
+
+<a class="link" href="https://teletype.in/@adam_nifidov/mainBl_GGC">Черный Список</a>
 
 </div>
 
-<div class="bottom">
+<div class="nav glass">
 
-<a href="index.html">
-<span>🏠</span>
-Главная
-</a>
-
-<a href="rules.html">
-<span>📋</span>
-Правила
-</a>
-
-<a href="links.html">
-<span>🔗</span>
-Ресурсы
-</a>
-
-<a href="hierarchy.html">
-<span>👑</span>
-Иерархия
-</a>
+<button onclick="location.href='rules.html'">📜</button>
+<button onclick="location.href='links.html'">🔗</button>
+<button onclick="location.href='index.html'">🏠</button>
+<button onclick="location.href='hierarchy.html'">👥</button>
+<button onclick="location.href='settings.html'">⚙️</button>
 
 </div>
 
