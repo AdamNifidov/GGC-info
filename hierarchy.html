@@ -3,56 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Иерархия</title>
+<title>Иерархия — Gay Guys Community</title>
 
 <style>
 
 body{
 margin:0;
-font-family:system-ui;
-background:linear-gradient(180deg,#050510,#0b0b1c);
+font-family:sans-serif;
+background:linear-gradient(180deg,#2d3142,#3a4a6a);
 color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding-bottom:120px;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
+/* стекло */
+
+.glass{
+backdrop-filter:blur(25px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:25px;
 }
 
-.role{
-background:#14142b;
-padding:20px;
-border-radius:18px;
-margin-bottom:15px;
-}
+/* заголовок */
 
 .title{
-font-size:20px;
-color:#cdb8ff;
+margin-top:30px;
+font-size:28px;
 }
 
-.bottom{
+/* блок текста */
+
+.hierarchy{
+width:90%;
+margin-top:20px;
+padding:25px;
+line-height:1.7;
+font-size:15px;
+white-space:pre-line;
+}
+
+/* меню */
+
+.nav{
 position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:#080816;
-border-top:1px solid #222244;
+bottom:20px;
 display:flex;
-justify-content:space-around;
-padding:10px 0;
+gap:10px;
+padding:10px;
 }
 
-.bottom span{
-display:block;
-font-size:22px;
-}
-
-.bottom a{
-color:#a7a7ff;
-text-align:center;
-text-decoration:none;
+.nav button{
+width:60px;
+height:60px;
+border-radius:18px;
+border:none;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
+color:white;
+font-size:20px;
 }
 
 </style>
@@ -60,53 +71,39 @@ text-decoration:none;
 
 <body>
 
-<div class="container">
-
-<h1>👑 Иерархия</h1>
-
-<div class="role">
-<div class="title">Создатель</div>
-Главный владелец проекта
+<div class="title">
+Иерархия сети
 </div>
 
-<div class="role">
-<div class="title">Администратор</div>
-Контроль сообщества
+<div class="hierarchy glass">
+
+Владелец - у этого человека имеются права на большую часть ресурсов сети, владельцем не может быть человек ни разу не работающий на должности президента сети.                                                                                             Обязанности: проводить выборы президента сети в назначенный срок; держать сеть в безопасности;
+
+Заместитель владельца - правая рука владельца, его главный советник. Обязанности: помогать владельцу; следить за работой высшего руководства сети; заниматься пиаром сети;
+
+Президент - Глава сети, занимается всеми вопросами по улучшению сети, работе администрации, работе бесед и так далее.                                                   Обязанности: улучшать сеть; следить за работой сети, администрации.
+
+Вице-президент - права рука президента, занимающих эту должность может быть несколько, их выбирает сам президент.                                            Обязанности: помогать президенту улучшать сеть; следить за работой сети, администрации.
+
+Главный администратор - главный следящий за порядком в сети.           Обязанности: следить за порядком во всех беседах сети, а так же за работой администрации ниже рангом.
+
+Администратор - так же следит за порядком в беседах, занимающих эту должность может быть несколько. Работает в одной беседе в которую его назначают, однако по желанию может работать в нескольких.              Обязанности: следить за порядком и активом в беседах.
+
+Главный модератор - следит за активность в сети.                                                Обязанности: следить за активностью в сети, а так же работой модерации ниже рангом, в том числе стажеров.
+
+Модератор - следит за активность в беседах,  занимающих эту должность может быть несколько. Должность не распространяется на беседу для обмена. Обязанности:  следить за активностью в беседах.
+
+Стажер - новичок, который проходит испытательный срок на пост модератора. Обязанности:  следить за активностью в беседах. Проявлять себя.
+
 </div>
 
-<div class="role">
-<div class="title">Модератор</div>
-Следит за порядком
-</div>
+<div class="nav glass">
 
-<div class="role">
-<div class="title">Участник</div>
-Обычный пользователь
-</div>
-
-</div>
-
-<div class="bottom">
-
-<a href="index.html">
-<span>🏠</span>
-Главная
-</a>
-
-<a href="rules.html">
-<span>📋</span>
-Правила
-</a>
-
-<a href="links.html">
-<span>🔗</span>
-Ресурсы
-</a>
-
-<a href="hierarchy.html">
-<span>👑</span>
-Иерархия
-</a>
+<button onclick="location.href='rules.html'">📜</button>
+<button onclick="location.href='links.html'">🔗</button>
+<button onclick="location.href='index.html'">🏠</button>
+<button onclick="location.href='hierarchy.html'">👥</button>
+<button onclick="location.href='settings.html'">⚙️</button>
 
 </div>
 
