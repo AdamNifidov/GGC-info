@@ -1,100 +1,81 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Политика</title>
-
-<style>
-
 body{
 margin:0;
-font-family:system-ui;
-background:linear-gradient(180deg,#050510,#0b0b1c);
-color:white;
-}
-
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
-}
-
-.card{
-background:#14142b;
-border-radius:20px;
-padding:25px;
-}
-
-.bottom{
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:#080816;
-border-top:1px solid #222244;
+font-family:sans-serif;
+background:var(--bg);
+color:var(--text);
 display:flex;
-justify-content:space-around;
-padding:10px 0;
+flex-direction:column;
+align-items:center;
+padding-bottom:120px;
+transition:0.3s;
 }
 
-.bottom span{
-display:block;
-font-size:22px;
+:root{
+--bg:linear-gradient(180deg,#2d3142,#3a4a6a);
+--text:white;
 }
 
-.bottom a{
-color:#a7a7ff;
-text-decoration:none;
+.theme-light{
+--bg:linear-gradient(180deg,#f0f0f0,#dcdcdc);
+--text:#111;
+}
+
+.theme-blue{
+--bg:linear-gradient(180deg,#1e3c72,#2a5298);
+}
+
+.theme-purple{
+--bg:linear-gradient(180deg,#42275a,#734b6d);
+}
+
+.theme-pink{
+--bg:linear-gradient(180deg,#ff6a88,#ff99ac);
+}
+
+.glass{
+backdrop-filter:blur(25px);
+background:rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:25px;
+}
+
+.logo{
+margin-top:30px;
 text-align:center;
 }
 
-</style>
-</head>
+.logo img{
+width:200px;
+}
 
-<body>
+.box{
+width:90%;
+margin-top:20px;
+padding:25px;
+}
 
-<div class="container">
+.nav{
+position:fixed;
+bottom:20px;
+display:flex;
+gap:10px;
+padding:10px;
+}
 
-<div class="card">
+.nav button{
+width:60px;
+height:60px;
+border-radius:18px;
+border:none;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
+display:flex;
+align-items:center;
+justify-content:center;
+}
 
-<h1>🔒 Политика конфиденциальности</h1>
-
-<p>
-Мы не собираем персональные данные пользователей.
-</p>
-
-<p>
-Вся информация используется только для работы сообщества.
-</p>
-
-</div>
-
-</div>
-
-<div class="bottom">
-
-<a href="index.html">
-<span>🏠</span>
-Главная
-</a>
-
-<a href="rules.html">
-<span>📋</span>
-Правила
-</a>
-
-<a href="links.html">
-<span>🔗</span>
-Ресурсы
-</a>
-
-<a href="hierarchy.html">
-<span>👑</span>
-Иерархия
-</a>
-
-</div>
-
-</body>
-</html>
+.nav svg{
+width:26px;
+height:26px;
+fill:white;
+}
