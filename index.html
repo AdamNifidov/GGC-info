@@ -3,116 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gay Guys Community</title>
 
 <style>
 
 body{
 margin:0;
-font-family:system-ui;
-background:linear-gradient(180deg,#050510,#0b0b1c);
+font-family:sans-serif;
+background:linear-gradient(180deg,#2d3142,#3a4a6a);
 color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+height:100vh;
+}
+
+/* стеклянный стиль */
+
+.glass{
+backdrop-filter: blur(20px);
+background: rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:25px;
+}
+
+/* логотип */
+
+.logo{
+margin-top:30px;
 text-align:center;
 }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:20px;
+.logo h1{
+margin:10px 0;
 }
 
-.card{
-background:linear-gradient(145deg,#14142b,#1b1b38);
-border-radius:24px;
-padding:35px;
-box-shadow:0 0 30px rgba(120,80,255,0.25);
-margin-bottom:30px;
-}
+/* блок условий */
 
-.notice{
+.conditions{
+margin-top:10px;
+padding:10px 20px;
 font-size:14px;
-color:#bdbdff;
-margin-bottom:15px;
 }
 
-.notice a{
-color:#caa8ff;
+.conditions a{
+color:#9ecbff;
 text-decoration:none;
-border-bottom:1px dashed #caa8ff;
 }
 
-h1{
-font-size:40px;
-margin:15px 0;
-}
-
-.subtitle{
-color:#a5a5d6;
-font-size:18px;
-line-height:1.6;
-}
-
-.buttons{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
-margin-top:25px;
-}
-
-.button{
-padding:14px 22px;
-border-radius:999px;
-background:#101028;
-border:1px solid #272750;
-color:#cfcfff;
-text-decoration:none;
-transition:0.2s;
-}
-
-.button:hover{
-background:#181842;
-}
+/* новости */
 
 .news{
-background:#14142b;
-border-radius:20px;
-padding:30px;
-border:1px solid #272750;
-}
-
-.news-title{
-font-size:24px;
-margin-bottom:15px;
-}
-
-.news-empty{
-color:#8c8cb5;
-}
-
-.bottom{
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-background:#080816;
-border-top:1px solid #222244;
+margin-top:20px;
+width:85%;
+height:50vh;
 display:flex;
-justify-content:space-around;
-padding:10px 0;
+justify-content:center;
+align-items:center;
+font-size:24px;
 }
 
-.bottom a{
-color:#a7a7ff;
-text-decoration:none;
-font-size:14px;
-text-align:center;
+/* нижнее меню */
+
+.nav{
+position:fixed;
+bottom:20px;
+display:flex;
+gap:10px;
+padding:10px;
 }
 
-.bottom span{
-display:block;
-font-size:22px;
+.nav button{
+width:60px;
+height:60px;
+border-radius:18px;
+border:none;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
+color:white;
+font-size:20px;
 }
 
 </style>
@@ -120,69 +89,32 @@ font-size:22px;
 
 <body>
 
-<div class="container">
-
-<div class="card">
-
-<div class="notice">
-Используя ресурсы GGC вы соглашаетесь с нашей 
-<a href="privacy.html">политикой</a>
+<div class="logo">
+<h1>Gay Guys Community</h1>
 </div>
 
-<h1>Добро пожаловать</h1>
-
-<div class="subtitle">
-Это официальный сайт <b>«Gay Guys Community»</b> — первой сети бесед для геев подростков в СНГ, вышедшей на уровень большого комьюнити.  
-<br><br>
-Наша сеть создана для вашего комфорта и безопасности.  
-<br><br>
-С любовью, администрация <b>GGC</b>.
-</div>
-
-<div class="buttons">
-
-<a class="button" href="rules.html">📋 Правила</a>
-<a class="button" href="links.html">🔗 Ресурсы</a>
-<a class="button" href="hierarchy.html">👑 Иерархия</a>
-<a class="button" href="privacy.html">🔒 Политика</a>
-
-</div>
-
-</div>
-
-<div class="news">
-
-<div class="news-title">📰 Новостная лента</div>
-
-<div class="news-empty">
-Актуальные новости пока не загружены.
-</div>
-
-</div>
-
-</div>
-
-<div class="bottom">
-
-<a href="index.html">
-<span>🏠</span>
-Главная
+<div class="conditions glass">
+Используя ресурсы GGC вы соглашаетесь с нашими
+<a href="https://teletype.in/@adam_nifidov/PrivacyPolicyGGC">
+условиями использования
 </a>
+</div>
 
-<a href="rules.html">
-<span>📋</span>
-Правила
-</a>
+<div class="news glass">
+Пока новостей нет
+</div>
 
-<a href="links.html">
-<span>🔗</span>
-Ресурсы
-</a>
+<div class="nav glass">
 
-<a href="hierarchy.html">
-<span>👑</span>
-Иерархия
-</a>
+<button onclick="location.href='rules.html'">📜</button>
+
+<button onclick="location.href='links.html'">🔗</button>
+
+<button onclick="location.href='index.html'">🏠</button>
+
+<button onclick="location.href='hierarchy.html'">👥</button>
+
+<button onclick="location.href='settings.html'">⚙️</button>
 
 </div>
 
