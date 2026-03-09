@@ -1,0 +1,124 @@
+
+@font-face{
+font-family:'TTNormsLike';
+src:local('Inter'), local('Arial');
+}
+
+@font-face{
+font-family:'CatsShowLike';
+src:local('Luckiest Guy'), local('Impact');
+}
+
+body{
+margin:0;
+font-family:'TTNormsLike', sans-serif;
+background:linear-gradient(120deg,#1f2230,#2e3450,#1f2230);
+background-size:300% 300%;
+animation:bgmove 12s ease infinite;
+color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding-bottom:120px;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.glass{
+backdrop-filter:blur(35px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.18);
+border-radius:26px;
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+.logo-wrap{
+margin-top:40px;
+text-align:center;
+}
+
+.logo-wrap img{
+width:170px;
+display:block;
+margin:auto;
+}
+
+.site-title{
+font-family:'CatsShowLike', sans-serif;
+font-size:40px;
+margin-top:10px;
+letter-spacing:1px;
+}
+
+.conditions{
+margin-top:15px;
+padding:10px 20px;
+font-size:14px;
+}
+
+.conditions a{
+color:#9ecbff;
+text-decoration:none;
+}
+
+.news{
+margin-top:20px;
+width:90%;
+height:40vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+}
+
+.box{
+width:90%;
+margin-top:20px;
+padding:25px;
+line-height:1.6;
+white-space:pre-line;
+}
+
+.link{
+display:block;
+padding:15px;
+margin-top:10px;
+text-align:center;
+border-radius:18px;
+text-decoration:none;
+color:white;
+background:rgba(255,255,255,0.12);
+}
+
+.nav{
+position:fixed;
+bottom:18px;
+display:flex;
+gap:12px;
+padding:12px;
+}
+
+.nav button{
+width:60px;
+height:60px;
+border:none;
+border-radius:20px;
+background:rgba(255,255,255,0.12);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.nav img{
+width:28px;
+height:28px;
+}
+
+.nav button.active{
+background:rgba(255,255,255,0.35);
+transform:scale(1.1);
+}
